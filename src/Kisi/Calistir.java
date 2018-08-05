@@ -23,9 +23,9 @@ public class Calistir {
 		VergiKesinti vergiKesinti = new VergiKesinti(aylik, sgkKesinti,15,  AGILERIMIZ.EVLI_ESI_CALISMAYAN_2_COCUKLU);
 		HesapIslem hesap = new HesapIslem(aylik, olay, yillik);
 		Sonuc sonuc = new Sonuc(sgkKesinti, vergiKesinti, hesap);		
-		System.out.println(hesap.HakedisToplami());
-		System.out.println(dFormat.format(sonuc.Tahakkuk()));
-		System.out.println(dFormat.format(sonuc.KesintiMiktari()));
-		System.out.println(dFormat.format(sonuc.NetOdenen()));
+		System.out.println("Hakediþ Toplamý : " + hesap.HakedisToplami());
+		System.out.println("Tahakkuk Toplamý : " + dFormat.format(sonuc.Tahakkuk()));
+		System.out.println("Kesinti Miktarý : " + dFormat.format(sonuc.KesintiMiktari()));
+		System.out.println("Net Ödenen : " + dFormat.format(sonuc.NetOdenen()));
 	}
 }
